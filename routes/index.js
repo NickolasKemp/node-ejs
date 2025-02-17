@@ -14,4 +14,13 @@ router.get("/student", (req, res) => {
     res.render("student", { student });
 });
 
+router.get("/illia", (req, res) => {
+    const student = {
+        name: "Ілля",
+        age: 19,
+        university: "Київський Політехніхний Інститут",
+    };
+    res.render("student", { student });
+});
+
 module.exports = router;
