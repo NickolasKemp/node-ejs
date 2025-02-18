@@ -5,11 +5,11 @@ router.get("/", (req, res) => {
     res.sendFile(__dirname + "/../public/index.html");
 });
 
-router.get("/student", (req, res) => {
+router.get("/mykola", (req, res) => {
     const student = {
-        name: "Аладдін Ібн Ясін",
-        age: 21,
-        university: "Київськи Політехніхні Інститут",
+        name: "Алладін Ібн Ясін",
+        age: 19,
+        github: "https://github.com/NickolasKemp",
     };
     res.render("student", { student });
 });
@@ -18,7 +18,7 @@ router.get("/illia", (req, res) => {
     const student = {
         name: "Ілля",
         age: 19,
-        university: "Київський Політехніхний Інститут",
+        github: "https://github.com/IlliaFaolritana",
     };
     res.render("student", { student });
 });
@@ -27,7 +27,7 @@ router.get("/stas", (req, res) => {
     const student = {
         name: "Станіслав",
         age: 18,
-        university: "Київський Політехнічний Інститут",
+        github: "https://github.com/layn1asol",
     };
     res.render("student", { student });
 });
@@ -36,10 +36,9 @@ router.get("/ivan", (req, res) => {
     const student = {
         name: "Іван",
         age: 18,
-        university: "Київський Політехнічний Інститут",
+        github: "https://github.com/ip34is",
     };
     res.render("student", { student });
 });
-
 
 module.exports = router;
