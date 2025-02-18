@@ -4,17 +4,41 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Наша бригада</title>
+        <link rel="stylesheet" href="/styles.css" />
     </head>
     <body>
         <h1>Ласкаво просимо!</h1>
         <p>Це сторінка про нашу бригаду.</p>
-        <img src="/images/team.png" alt="Наша бригада" width="300" />
-        <p><a href="/student">Дізнатися більше про студента</a></p>
-        <img src="/images/illia-png.png" alt="Фото Іллі" width="300" />
-        <p><a href="/illia">Дізнатися більше про студента</a></p>
-        <img src="/images/stas.png" alt="Фото Стаса" width="300" />
-        <p><a href="/stas">Дізнатися більше про студента</a></p>
-        <p>
+        <img
+            src="/images/team.png"
+            alt="Наша бригада"
+            width="300"
+            height="200"
+        />
+
+        <div class="team-container">
+            <div class="team-member">
+                <img src="/images/mykola.jpg" alt="Фото Миколи" />
+                <p><a href="/mykola">Дізнатися більше про Миколу</a></p>
+            </div>
+
+            <div class="team-member">
+                <img src="/images/illia.png" alt="Фото Іллі" />
+                <p><a href="/illia">Дізнатися більше про Іллю</a></p>
+            </div>
+
+            <div class="team-member">
+                <img src="/images/stas.png" alt="Фото Стаса" />
+                <p><a href="/stas">Дізнатися більше про Стаса</a></p>
+            </div>
+
+            <div class="team-member">
+                <img src="/images/ivan.jpg" alt="Фото Івана" />
+                <p><a href="/ivan">Дізнатися більше про Івана</a></p>
+            </div>
+        </div>
+
+        <p class="nodejs-link">
             <a href="https://nodejs.org/" target="_blank"
                 >Дізнатися більше про Node.js</a
             >

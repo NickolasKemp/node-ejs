@@ -4,12 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Про студента</title>
+        <link rel="stylesheet" href="/styles.css" />
     </head>
     <body>
-        <h1>Інформація про студента</h1>
-        <p><strong>Ім'я:</strong> <%= student.name %></p>
-        <p><strong>Вік:</strong> <%= student.age %></p>
-        <p><strong>Університет:</strong> <%= student.university %></p>
-        <p><a href="/">Повернутися на головну</a></p>
+        <div class="student-card">
+            <h1>Інформація про студента</h1>
+            <p><strong>Ім'я:</strong> <%= student.name %></p>
+            <p><strong>Вік:</strong> <%= student.age %></p>
+            <p>
+                <strong>GitHub:</strong>
+                <a href="<%= student.github %>" target="_blank"
+                    ><%= student.github %></a
+                >
+            </p>
+            <a href="/" class="back-link">Повернутися на головну</a>
+        </div>
     </body>
 </html>
